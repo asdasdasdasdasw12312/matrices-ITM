@@ -18,12 +18,12 @@ public class e{
             }
         }
         cls.Mensaje(puntoA(vendedores, productos));
-        b = puntoB(productos, vendedores);
+        b = puntoB(productos);
         cls.Mensaje("La zona que mas vendio fue la: " + (b[0] + 1) + " con la cantidad de computadores vendidos de: " + b[1] + "\n" + "la persona que mas vendio en esa zona fue: " + vendedores[b[2]] + " con una cantidad de: " + b[3]);
 
 
     }
-    public static int[] puntoB(int[][] productos, String[] nombres){
+    public static int[] puntoB(int[][] productos){
         int b[] = new int[4];
         int suma=0;
         int mayorzona=0;
